@@ -1,0 +1,19 @@
+{
+  "name": "natanielmendes-assignment-backend",
+  "version": "1.0.0",
+  "description": "Polarr Backend Developer Assigment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Nataniel Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
