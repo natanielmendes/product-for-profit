@@ -6,7 +6,7 @@ import db from '../config/firebase';
 router.get('/recommend', (req, res, next) => {
     let results = [];
     const threads = db.ref();
-    const query = threads.limitToFirst(2);
+    const query = threads.limitToFirst(2).orderByChild('timeStamp');
     query.on('value', snap => {
         res.send(snap.val());
     })
